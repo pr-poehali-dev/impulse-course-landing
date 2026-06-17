@@ -17,21 +17,11 @@ const nav = [
 ];
 
 const features = [
-  {
-    icon: 'Wind',
-    title: 'Первый вдох',
-    text: 'Честно препарируем то, что давит. Без жалости — но с заботой. Вы увидите реальную картину.',
-  },
-  {
-    icon: 'Flame',
-    title: 'Встряска',
-    text: 'Практики, которые выводят из оцепенения. Тело, дыхание, фокус — вы снова чувствуете опору.',
-  },
-  {
-    icon: 'Sunrise',
-    title: 'Новый импульс',
-    text: 'Системный путь, а не быстрые лайфхаки. Вы уходите с энергией и понятным планом движения.',
-  },
+  { icon: 'PersonStanding', title: 'Тело', text: 'Авторская гимнастика СинТРИя + йога. Свобода движения и гибкость без боли.' },
+  { icon: 'Brain', title: 'Психический тонус', text: 'Работа с теневыми паттернами и сценариями. Внутренние конфликты — без насилия.' },
+  { icon: 'Salad', title: 'Энергия', text: 'Природные ритмы питания. Перестаёте заедать усталость — питание встраивается в ритм.' },
+  { icon: 'Wind', title: 'Осанка и дыхание', text: 'Соматические практики. Утро перестаёт быть борьбой — появляется живой импульс.' },
+  { icon: 'Repeat', title: 'Привычки', text: '2–3 стабильных паттерна. Новые привычки работают сами — без ежедневной войны с собой.' },
 ];
 
 const weeks = [
@@ -171,21 +161,50 @@ const Index = () => {
       {/* ABOUT */}
       <section id="about" className="py-28 relative">
         <div className="container">
-          <div className="max-w-2xl mb-16">
-            <p className="text-gold font-display tracking-[0.25em] text-sm mb-4">О КУРСЕ</p>
-            <h2 className="font-display font-bold text-4xl md:text-5xl mb-6">Мягкое препарирование без жалости</h2>
-            <p className="text-muted-foreground text-lg leading-relaxed">
-              «ИМПУЛЬС» — это не про сладкие обещания. Это системная встряска для взрослых, уставших от пустых тренингов. Здесь вас поймут и помогут стать сильнее — но не будут нянчиться.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-6">
-            {features.map((f) => (
-              <div key={f.title} className="group p-8 rounded-sm bg-card border border-border hover:border-gold/50 transition-all duration-300">
-                <div className="w-14 h-14 rounded-sm bg-gold/10 border border-gold/30 flex items-center justify-center mb-6 group-hover:bg-gold/20 transition-colors">
-                  <Icon name={f.icon} className="text-gold" size={26} />
+          <div className="grid md:grid-cols-2 gap-16 items-start mb-16">
+            <div>
+              <p className="text-gold font-display tracking-[0.25em] text-sm mb-4">О КУРСЕ</p>
+              <h2 className="font-display font-bold text-4xl md:text-5xl mb-6 leading-tight">Сборка тела, психики и ритмов в одну систему</h2>
+              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+                «ИМПУЛЬС» — это сборка тела, психики и ритмов в одну работающую систему. Всё онлайн. 3 недели. 4 специалиста. Один ритм.
+              </p>
+              <p className="text-foreground/80 leading-relaxed mb-8">
+                На выходе — инструмент перезапуска, который остаётся с вами. Без «понедельников». Живо, практично, с поддержкой.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                {[['Calendar', '3 недели'], ['Users', 'Группа 10 человек'], ['Wifi', 'Всё онлайн'], ['Users2', '4 специалиста']].map(([icon, label]) => (
+                  <div key={label} className="flex items-center gap-2 px-4 py-2 rounded-sm bg-card border border-gold/30 text-sm">
+                    <Icon name={icon} className="text-gold" size={16} />
+                    <span className="text-foreground/80">{label}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="space-y-3">
+              <p className="font-display font-semibold text-gold tracking-wide mb-4">🧬 База счастья и здоровья — то, что останется с вами</p>
+              {[
+                'Утро перестаёт быть борьбой — появляется живой импульс встать',
+                'Тело перестаёт болеть и застывать — возвращается свобода и гибкость',
+                'Питание встраивается в ритм, а не в хаос — вы перестаёте заедать усталость',
+                'Внутренние конфликты проходят без насилия — вы действуете спокойно',
+                'Новые паттерны работают сами — без ежедневной войны с собой',
+              ].map((item) => (
+                <div key={item} className="flex items-start gap-3 p-4 rounded-sm bg-card border border-border">
+                  <div className="w-1.5 h-1.5 rounded-full bg-gold mt-2 shrink-0" />
+                  <p className="text-foreground/80 leading-relaxed text-sm">{item}</p>
                 </div>
-                <h3 className="font-display font-semibold text-2xl mb-3">{f.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{f.text}</p>
+              ))}
+            </div>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+            {features.map((f) => (
+              <div key={f.title} className="group p-6 rounded-sm bg-card border border-border hover:border-gold/50 transition-all duration-300">
+                <div className="w-12 h-12 rounded-sm bg-gold/10 border border-gold/30 flex items-center justify-center mb-4 group-hover:bg-gold/20 transition-colors">
+                  <Icon name={f.icon} className="text-gold" size={22} />
+                </div>
+                <h3 className="font-display font-semibold text-lg mb-2">{f.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{f.text}</p>
               </div>
             ))}
           </div>
