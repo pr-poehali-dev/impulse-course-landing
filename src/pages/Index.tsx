@@ -106,11 +106,8 @@ const Index = () => {
       {/* NAV */}
       <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-background/70 border-b border-border/50">
         <div className="container flex items-center justify-between h-16">
-          <button onClick={() => scrollTo('hero')} className="flex items-center gap-2">
-            <div className="w-9 h-9 rounded-sm bg-gold/15 border border-gold/40 flex items-center justify-center">
-              <Icon name="Zap" className="text-gold" size={20} />
-            </div>
-            <span className="font-display font-bold text-lg tracking-wider">СИЛА</span>
+          <button onClick={() => scrollTo('hero')} className="flex items-center gap-1">
+            <img src="https://cdn.poehali.dev/projects/be3c599a-f041-48fc-a5b3-cc5d57a35c74/bucket/09ee154e-ff83-426c-b61b-b56c50cf9ccd.jpg" alt="СИЛА" className="w-10 h-10 object-contain" />
           </button>
           <nav className="hidden md:flex items-center gap-7">
             {nav.map((n) => (
@@ -347,10 +344,7 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-10">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <div className="w-9 h-9 rounded-sm bg-gold/15 border border-gold/40 flex items-center justify-center">
-                  <Icon name="Zap" className="text-gold" size={20} />
-                </div>
-                <span className="font-display font-bold text-lg tracking-wider">СИЛА</span>
+                <img src="https://cdn.poehali.dev/projects/be3c599a-f041-48fc-a5b3-cc5d57a35c74/bucket/09ee154e-ff83-426c-b61b-b56c50cf9ccd.jpg" alt="СИЛА" className="w-12 h-12 object-contain" />
               </div>
               <p className="text-muted-foreground text-sm leading-relaxed">Клуб саморазвития и поддержки. Помогаем стать сильнее — честно и с заботой.</p>
             </div>
