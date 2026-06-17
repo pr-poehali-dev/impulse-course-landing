@@ -34,17 +34,45 @@ const features = [
   },
 ];
 
-const schedule = [
-  { day: 'День 1', date: '12 июля', title: 'Диагностика. Где вы сейчас', desc: 'Безжалостный, но бережный разбор. Карта вашего состояния и точек напряжения.', time: '18:00 – 21:00' },
-  { day: 'День 2', date: '13 июля', title: 'Дыхание и тело', desc: 'Телесные практики, дыхательные техники. Возвращаем контакт с собой.', time: '18:00 – 21:00' },
-  { day: 'День 3', date: '14 июля', title: 'Встряска и ресурс', desc: 'Работа со страхами и блоками. Находим внутреннюю силу и опору.', time: '18:00 – 21:00' },
-  { day: 'День 4', date: '15 июля', title: 'Новый импульс', desc: 'Сборка пути. Личный план движения и поддержка клуба на 30 дней.', time: '18:00 – 21:00' },
+const weeks = [
+  {
+    label: 'Неделя 1',
+    range: '12–18 июля',
+    days: [
+      { date: '12 июля', dow: 'Вс', time: '10:00 МСК', speaker: 'Камилла Ринатова', role: 'Теневые паттерны', icon: 'Brain', title: 'Знакомство. Постановка намерений', desc: 'Постановка намерений на курс. Безопасность как первый шаг.' },
+      { date: '13 июля', dow: 'Пн', time: '20:00 МСК', speaker: 'Андрей Волга', role: 'Натуропат', icon: 'Salad', title: 'Суть происходящего', desc: 'Природный режим сна и питания. Паразиты: друзья или враги? Пищевые паузы.' },
+      { date: '14 июля', dow: 'Вт', time: '07:00 МСК', speaker: 'Елена Егорова', role: 'Гимнастика СинТРИя', icon: 'PersonStanding', title: 'Включение в тело', desc: 'Разбор теории и инструкции. Практическое занятие.' },
+      { date: '16 июля', dow: 'Чт', time: '07:00 МСК', speaker: 'Елизавета Тарасова', role: 'Йога', icon: 'Flower2', title: 'Базовая настройка', desc: 'Йога для любого уровня подготовки.' },
+    ],
+  },
+  {
+    label: 'Неделя 2',
+    range: '19–25 июля',
+    days: [
+      { date: '19 июля', dow: 'Вс', time: '10:00 МСК', speaker: 'Камилла Ринатова', role: 'Теневые паттерны', icon: 'Brain', title: 'Где я теряю импульс', desc: 'Сопротивление. Внутренний конфликт — пути решения.' },
+      { date: '20 июля', dow: 'Пн', time: '20:00 МСК', speaker: 'Андрей Волга', role: 'Натуропат', icon: 'Salad', title: 'АЗ-бука питания', desc: 'Западное влияние в диетах. Завтраки для клеток. Правильные закупки.' },
+      { date: '21 июля', dow: 'Вт', time: '07:00 МСК', speaker: 'Елена Егорова', role: 'Гимнастика СинТРИя', icon: 'PersonStanding', title: 'Проработка зажимов', desc: 'Работа с телесными зажимами и напряжением.' },
+      { date: '23 июля', dow: 'Чт', time: '07:00 МСК', speaker: 'Елизавета Тарасова', role: 'Йога', icon: 'Flower2', title: 'Базовая настройка', desc: 'Йога для любого уровня подготовки.' },
+    ],
+  },
+  {
+    label: 'Неделя 3',
+    range: '26 июля – 1 авг',
+    days: [
+      { date: '26 июля', dow: 'Вс', time: '10:00 МСК', speaker: 'Камилла Ринатова', role: 'Теневые паттерны', icon: 'Brain', title: 'Паттерны мышления', desc: 'Как создавать новые паттерны и закрепить их.' },
+      { date: '27 июля', dow: 'Пн', time: '20:00 МСК', speaker: 'Андрей Волга', role: 'Натуропат', icon: 'Salad', title: 'Наслаждение очищением', desc: 'Обеды без запретов. Влияние жиров и железа на качество жизни.' },
+      { date: '28 июля', dow: 'Вт', time: '07:00 МСК', speaker: 'Елена Егорова', role: 'Гимнастика СинТРИя', icon: 'PersonStanding', title: 'СинТРИя в динамике', desc: 'Как использовать практику в обычной жизни.' },
+      { date: '30 июля', dow: 'Чт', time: '07:00 МСК', speaker: 'Елизавета Тарасова', role: 'Йога', icon: 'Flower2', title: 'Базовая настройка', desc: 'Йога для любого уровня подготовки.' },
+      { date: '1 авг', dow: 'Сб', time: '11:00 МСК', speaker: 'Камилла + команда', role: 'Финал', icon: 'Flame', title: 'Итоги. Интеграция', desc: 'Интеграция в повседневную жизнь. Ритуал закрытия.', final: true },
+    ],
+  },
 ];
 
 const experts = [
-  { name: 'Анна Соколова', role: 'Основатель клуба СИЛА', bio: 'Психолог, телесный терапевт. 12 лет ведёт людей через личные кризисы к новой опоре.', icon: 'Anchor' },
-  { name: 'Дмитрий Кравцов', role: 'Дыхательные практики', bio: 'Инструктор по дыхательным техникам и медитации. Автор методики «Глубокий вдох».', icon: 'Wind' },
-  { name: 'Мария Лебедева', role: 'Работа с телом', bio: 'Соматический терапевт. Помогает вернуть энергию через движение и осознанность.', icon: 'Activity' },
+  { name: 'Камилла Ринатова', role: 'Теневые паттерны', bio: 'Специалист по теневым паттернам, куратор трансперсонального подхода. Ведёт через намерения и интеграцию.', icon: 'Brain' },
+  { name: 'Андрей Волга', role: 'Натуропат', bio: 'Натуропат. Природный режим питания и сна, очищение тела, осознанные пищевые привычки.', icon: 'Salad' },
+  { name: 'Елена Егорова', role: 'Гимнастика СинТРИя', bio: 'Автор гимнастики СинТРИя. Включение в тело, проработка зажимов, движение в жизни.', icon: 'PersonStanding' },
+  { name: 'Елизавета Тарасова', role: 'Йога', bio: 'Преподаватель йоги. Базовая настройка в практике для любого уровня подготовки.', icon: 'Flower2' },
 ];
 
 const reviews = [
@@ -57,6 +85,7 @@ const Index = () => {
   const { toast } = useToast();
   const [form, setForm] = useState({ name: '', phone: '', email: '' });
   const [open, setOpen] = useState(false);
+  const [activeWeek, setActiveWeek] = useState(0);
 
   const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
@@ -169,24 +198,54 @@ const Index = () => {
       {/* SCHEDULE */}
       <section id="schedule" className="py-28 bg-secondary/30 relative grain">
         <div className="container relative z-10">
-          <div className="max-w-2xl mb-16">
+          <div className="max-w-2xl mb-12">
             <p className="text-gold font-display tracking-[0.25em] text-sm mb-4">РАСПИСАНИЕ</p>
-            <h2 className="font-display font-bold text-4xl md:text-5xl mb-6">Путь от встряски до нового вдоха</h2>
-            <p className="text-muted-foreground text-lg">Четыре вечера. Каждый шаг ведёт глубже — и выше.</p>
+            <h2 className="font-display font-bold text-4xl md:text-5xl mb-6">21 день пути к новому вдоху</h2>
+            <p className="text-muted-foreground text-lg">Три недели глубокой работы: сознание, тело и питание. Финал — интеграция и ритуал закрытия.</p>
           </div>
+
+          {/* Week tabs */}
+          <div className="flex flex-wrap gap-3 mb-10">
+            {weeks.map((w, i) => (
+              <button
+                key={i}
+                onClick={() => setActiveWeek(i)}
+                className={`px-6 py-3 rounded-sm font-display font-semibold tracking-wide transition-all border ${
+                  activeWeek === i
+                    ? 'bg-gold text-primary-foreground border-gold gold-glow'
+                    : 'bg-card text-muted-foreground border-border hover:border-gold/50 hover:text-gold'
+                }`}
+              >
+                {w.label}
+                <span className={`block text-xs font-sans font-normal ${activeWeek === i ? 'text-primary-foreground/80' : 'text-muted-foreground'}`}>{w.range}</span>
+              </button>
+            ))}
+          </div>
+
+          {/* Days */}
           <div className="space-y-4">
-            {schedule.map((s, i) => (
-              <div key={i} className="group flex flex-col md:flex-row md:items-center gap-4 md:gap-8 p-6 md:p-8 rounded-sm bg-card border border-border hover:border-gold/50 transition-all">
-                <div className="md:w-40 shrink-0">
-                  <div className="font-display font-bold text-2xl text-gold">{s.day}</div>
-                  <div className="text-muted-foreground text-sm">{s.date} · {s.time}</div>
+            {weeks[activeWeek].days.map((d, i) => (
+              <div
+                key={i}
+                className={`group flex flex-col md:flex-row md:items-center gap-4 md:gap-6 p-6 md:p-7 rounded-sm border transition-all animate-fade-up ${
+                  d.final ? 'bg-gold/10 border-gold/50' : 'bg-card border-border hover:border-gold/50'
+                }`}
+                style={{ animationDelay: `${i * 0.06}s` }}
+              >
+                <div className="md:w-32 shrink-0">
+                  <div className="font-display font-bold text-2xl text-gold">{d.date}</div>
+                  <div className="text-muted-foreground text-sm">{d.dow} · {d.time}</div>
+                </div>
+                <div className="hidden md:flex w-14 h-14 rounded-sm bg-gold/10 border border-gold/30 items-center justify-center shrink-0">
+                  <Icon name={d.icon} className="text-gold" size={24} />
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-display font-semibold text-xl mb-1">{s.title}</h3>
-                  <p className="text-muted-foreground">{s.desc}</p>
+                  <h3 className="font-display font-semibold text-xl mb-1">{d.title}</h3>
+                  <p className="text-muted-foreground text-sm">{d.desc}</p>
                 </div>
-                <div className="hidden md:flex w-10 h-10 rounded-full border border-gold/30 items-center justify-center text-gold group-hover:bg-gold/10 transition-colors shrink-0">
-                  {i + 1}
+                <div className="md:text-right shrink-0 md:w-48">
+                  <div className="font-display font-semibold text-foreground">{d.speaker}</div>
+                  <div className="text-gold text-sm">{d.role}</div>
                 </div>
               </div>
             ))}
@@ -202,7 +261,7 @@ const Index = () => {
             <h2 className="font-display font-bold text-4xl md:text-5xl mb-6">Те, кто проведёт вас через путь</h2>
             <p className="text-muted-foreground text-lg">Наставники клуба СИЛА — практики, прошедшие свой путь и ведущие других.</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {experts.map((e) => (
               <div key={e.name} className="p-8 rounded-sm bg-card border border-border hover:border-gold/50 transition-all">
                 <div className="w-20 h-20 rounded-full bg-gradient-to-br from-gold/30 to-terracotta/40 border border-gold/40 flex items-center justify-center mb-6">
@@ -210,7 +269,7 @@ const Index = () => {
                 </div>
                 <h3 className="font-display font-semibold text-2xl mb-1">{e.name}</h3>
                 <p className="text-gold text-sm mb-4">{e.role}</p>
-                <p className="text-muted-foreground leading-relaxed">{e.bio}</p>
+                <p className="text-muted-foreground leading-relaxed text-sm">{e.bio}</p>
               </div>
             ))}
           </div>
