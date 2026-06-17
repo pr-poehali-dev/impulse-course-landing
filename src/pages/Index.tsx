@@ -285,7 +285,7 @@ const Index = () => {
         <div className="container relative z-10">
           <div className="max-w-2xl mb-16">
             <p className="text-gold font-display tracking-[0.25em] text-sm mb-4">ОТЗЫВЫ</p>
-            <h2 className="font-display font-bold text-4xl md:text-5xl">Те, кто уже вдохнул</h2>
+            <h2 className="font-display font-bold text-4xl md:text-5xl">Те, кто уже с нами</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {reviews.map((r) => (
