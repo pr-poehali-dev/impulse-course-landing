@@ -144,10 +144,17 @@ const Index = () => {
         <div className="absolute -top-20 -right-20 w-[500px] h-[500px] rounded-full bg-gold/10 blur-3xl animate-breathe" />
         <div className="container relative z-10 py-32">
           <div className="max-w-3xl">
-            <p className="animate-fade-up text-gold font-display tracking-[0.3em] text-sm mb-6" style={{ animationDelay: '0.1s' }}>
+            <div className="animate-fade-up mb-8" style={{ animationDelay: '0s' }}>
+              <img
+                src="https://cdn.poehali.dev/projects/be3c599a-f041-48fc-a5b3-cc5d57a35c74/bucket/09ee154e-ff83-426c-b61b-b56c50cf9ccd.jpg"
+                alt="СИЛА"
+                className="w-28 h-28 md:w-36 md:h-36 object-contain drop-shadow-[0_0_30px_rgba(180,130,50,0.5)]"
+              />
+            </div>
+            <p className="animate-fade-up text-gold font-display tracking-[0.3em] text-sm mb-6" style={{ animationDelay: '0.15s' }}>
               КЛУБ САМОРАЗВИТИЯ И ПОДДЕРЖКИ · КУРС-ИНТЕНСИВ
             </p>
-            <h1 className="animate-fade-up font-display font-bold text-6xl md:text-8xl leading-[0.9] mb-6" style={{ animationDelay: '0.25s' }}>
+            <h1 className="animate-fade-up font-display font-bold text-6xl md:text-8xl leading-[0.9] mb-6" style={{ animationDelay: '0.3s' }}>
               <span className="gold-text">ИМПУЛЬС</span>
             </h1>
             <p className="animate-fade-up text-xl md:text-2xl text-foreground/90 font-display font-light mb-4" style={{ animationDelay: '0.4s' }}>
