@@ -319,9 +319,7 @@ const Index = () => {
               onChange={(e) => setForm({ ...form, email: e.target.value })}
               className="bg-secondary border-border h-12 focus-visible:ring-gold"
             />
-            <Button type="submit" className="w-full bg-gold text-primary-foreground hover:bg-gold/90 font-medium h-12 text-base">
-              <Icon name="Wind" size={18} className="mr-2" /> Сделать первый вдох
-            </Button>
+            <Button type="submit" className="w-full bg-gold text-primary-foreground hover:bg-gold/90 font-medium h-12 text-base">Добро</Button>
             <p className="text-xs text-muted-foreground text-center">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
           </form>
         </div>
