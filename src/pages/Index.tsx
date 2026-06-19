@@ -147,11 +147,7 @@ const Index = () => {
               <Button onClick={() => scrollTo('about')} size="lg" variant="outline" className="border-gold/40 text-foreground hover:bg-gold/10 h-13 px-8">
                 Узнать о курсе
               </Button>
-              <a href="https://vk.com/powerpeopleclub" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" variant="outline" className="border-gold/40 text-foreground hover:bg-gold/10 h-13 px-8 w-full">
-                  Получить больше информации
-                </Button>
-              </a>
+
             </div>
           </div>
         </div>
@@ -326,6 +322,11 @@ const Index = () => {
             />
             <Button type="submit" className="w-full bg-gold text-primary-foreground hover:bg-gold/90 font-medium h-12 text-base">Добро</Button>
             <p className="text-xs text-muted-foreground text-center">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
+            <a href="https://vk.com/powerpeopleclub" target="_blank" rel="noopener noreferrer" className="block">
+              <Button type="button" variant="outline" className="w-full border-gold/40 text-foreground hover:bg-gold/10 h-12">
+                Получить больше информации
+              </Button>
+            </a>
           </form>
         </div>
       </section>
