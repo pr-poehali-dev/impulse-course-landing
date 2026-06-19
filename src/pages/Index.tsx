@@ -333,7 +333,7 @@ const Index = () => {
               <div className="flex items-center gap-2 mb-4">
                 <img src="https://cdn.poehali.dev/projects/be3c599a-f041-48fc-a5b3-cc5d57a35c74/bucket/09ee154e-ff83-426c-b61b-b56c50cf9ccd.jpg" alt="СИЛА" className="w-12 h-12 object-contain" />
               </div>
-              <p className="text-muted-foreground text-sm leading-relaxed">Клуб саморазвития и поддержки. Помогаем стать сильнее — честно и с заботой.</p>
+              <p className="text-muted-foreground text-sm leading-relaxed">Клуб саморазвития и поддержки СИЛА. Помогаем стать сильнее — честно и с заботой.</p>
             </div>
             <div>
               <h4 className="font-display font-semibold mb-4">Контакты</h4>
@@ -361,9 +361,7 @@ const Index = () => {
               </div>
             </div>
           </div>
-          <div className="mt-12 pt-6 border-t border-border text-center text-sm text-muted-foreground">
-            © 2025 Клуб СИЛА · Курс-интенсив «ИМПУЛЬС»
-          </div>
+          <div className="mt-12 pt-6 border-t border-border text-center text-sm text-muted-foreground">© 2026 Клуб СИЛА · Интенсив «ИМПУЛЬС»</div>
         </div>
       </footer>
     </div>
