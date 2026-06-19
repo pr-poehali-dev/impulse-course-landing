@@ -134,22 +134,16 @@ const Index = () => {
         <div className="absolute -top-20 -right-20 w-[500px] h-[500px] rounded-full bg-gold/10 blur-3xl animate-breathe" />
         <div className="container relative z-10 py-32">
           <div className="max-w-3xl">
-            <p className="animate-fade-up text-gold font-display tracking-[0.3em] text-sm mb-6" style={{ animationDelay: '0.1s' }}>
-              КЛУБ САМОРАЗВИТИЯ И ПОДДЕРЖКИ · КУРС-ИНТЕНСИВ
-            </p>
+            <p className="animate-fade-up text-gold font-display tracking-[0.3em] text-sm mb-6" style={{ animationDelay: '0.1s' }}>КЛУБ САМОРАЗВИТИЯ И ПОДДЕРЖКИ · ОНЛАЙН ИНТЕНСИВ</p>
             <h1 className="animate-fade-up font-display font-bold text-6xl md:text-8xl leading-[0.9] mb-6" style={{ animationDelay: '0.3s' }}>
               <span className="gold-text">ИМПУЛЬС</span>
             </h1>
-            <p className="animate-fade-up text-xl md:text-2xl text-foreground/90 font-display font-light mb-4" style={{ animationDelay: '0.4s' }}>
-              Сделай первый вдох настоящей жизни
-            </p>
-            <p className="animate-fade-up text-muted-foreground text-lg max-w-xl mb-10 leading-relaxed" style={{ animationDelay: '0.55s' }}>
-              4 дня честной работы с собой. Мы препарируем то, что давит, делаем искусственное дыхание и возвращаем силу двигаться дальше.
-            </p>
+            <p className="animate-fade-up text-xl md:text-2xl text-foreground/90 font-display font-light mb-4" style={{ animationDelay: '0.4s' }}>Комплексный подход, чтобы перестать откладывать жизнь.</p>
+            <p className="animate-fade-up text-muted-foreground text-lg max-w-xl mb-10 leading-relaxed" style={{ animationDelay: '0.55s' }}>21 день  честной работы с собой. 
+4 столпа счастья и здоровья:
+Тело+психика+питание+энергия</p>
             <div className="animate-fade-up flex flex-col sm:flex-row gap-4" style={{ animationDelay: '0.7s' }}>
-              <Button onClick={() => scrollTo('register')} size="lg" className="bg-gold text-primary-foreground hover:bg-gold/90 font-medium text-base h-13 px-8 gold-glow">
-                <Icon name="Wind" size={18} className="mr-2" /> Сделать первый вдох
-              </Button>
+              <Button onClick={() => scrollTo('register')} size="lg" className="bg-gold text-primary-foreground hover:bg-gold/90 font-medium text-base h-13 px-8 gold-glow">Я иду</Button>
               <Button onClick={() => scrollTo('about')} size="lg" variant="outline" className="border-gold/40 text-foreground hover:bg-gold/10 h-13 px-8">
                 Узнать о курсе
               </Button>
@@ -168,9 +162,7 @@ const Index = () => {
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
                 «ИМПУЛЬС» — это сборка тела, психики и ритмов в одну работающую систему. Всё онлайн. 3 недели. 4 специалиста. Один ритм.
               </p>
-              <p className="text-foreground/80 leading-relaxed mb-8">
-                На выходе — инструмент перезапуска, который остаётся с вами. Без «понедельников». Живо, практично, с поддержкой.
-              </p>
+              <p className="text-foreground/80 leading-relaxed mb-8">Вы оберёте  инструмент комплексного подхода, который остаётся с вами. Без «войны с собой». Перезапусти пространство жизни</p>
               <div className="flex flex-wrap gap-4">
                 {[['Calendar', '3 недели'], ['Users', 'Группа 10 человек'], ['Wifi', 'Всё онлайн'], ['Users2', '4 специалиста']].map(([icon, label]) => (
                   <div key={label} className="flex items-center gap-2 px-4 py-2 rounded-sm bg-card border border-gold/30 text-sm">
