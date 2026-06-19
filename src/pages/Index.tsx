@@ -340,9 +340,7 @@ const Index = () => {
             <div>
               <h4 className="font-display font-semibold mb-4">Контакты</h4>
               <div className="space-y-3 text-sm text-muted-foreground">
-                <a href="tel:+70000000000" className="flex items-center gap-2 hover:text-gold transition-colors">
-                  <Icon name="Phone" size={16} /> +7 (000) 000-00-00
-                </a>
+                <a href="tel:+70000000000" className="flex items-center gap-2 hover:text-gold transition-colors">+7 (917) 353-90-92</a>
                 <a href="mailto:hello@sila-club.ru" className="flex items-center gap-2 hover:text-gold transition-colors">
                   <Icon name="Mail" size={16} /> hello@sila-club.ru
                 </a>
