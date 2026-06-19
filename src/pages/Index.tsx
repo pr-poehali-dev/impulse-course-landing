@@ -342,9 +342,8 @@ const Index = () => {
               <div className="space-y-3 text-sm text-muted-foreground">
                 <a href="tel:+70000000000" className="flex items-center gap-2 hover:text-gold transition-colors">+7 (917) 353-90-92</a>
                 <a href="mailto:hello@sila-club.ru" className="flex items-center gap-2 hover:text-gold transition-colors">elma.do@mail.ru</a>
-                <p className="flex items-center gap-2">
-                  <Icon name="MapPin" size={16} /> Москва, пространство клуба
-                </p>
+                <p className="flex items-center gap-2">РФ, Республика Башкортостан, г Уфа
+</p>
               </div>
             </div>
             <div>
