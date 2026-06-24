@@ -208,7 +208,7 @@ const Index = () => {
         <div className="container relative z-10">
           <div className="max-w-2xl mb-12">
             <p className="text-gold font-display tracking-[0.25em] text-sm mb-4">РАСПИСАНИЕ</p>
-            <h2 className="font-display font-bold text-4xl md:text-5xl mb-6">21 день пути к новому вдоху</h2>
+            <h2 className="font-display font-bold text-4xl md:text-5xl mb-6">21 день </h2>
             <p className="text-muted-foreground text-lg">Три недели глубокой работы в безопасном пространстве. Полная конфиденциальность.</p>
           </div>
 
