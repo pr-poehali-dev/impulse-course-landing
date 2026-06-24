@@ -144,9 +144,8 @@ const Index = () => {
 Тело+психика+питание+энергия</p>
             <div className="animate-fade-up flex flex-col sm:flex-row gap-4" style={{ animationDelay: '0.7s' }}>
               <Button onClick={() => scrollTo('register')} size="lg" className="bg-gold text-primary-foreground hover:bg-gold/90 font-medium text-base h-13 px-8 gold-glow">Я иду</Button>
-              <Button onClick={() => scrollTo('about')} size="lg" variant="outline" className="border-gold/40 text-foreground hover:bg-gold/10 h-13 px-8">
-                Узнать о курсе
-              </Button>
+              <Button onClick={() => scrollTo('about')} size="lg" variant="outline" className="border-gold/40 text-foreground hover:bg-gold/10 h-13 px-8">ПОДРОБНЕЕ
+</Button>
 
             </div>
           </div>
